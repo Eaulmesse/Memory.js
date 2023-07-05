@@ -79,7 +79,7 @@ function handleRestart(e) {
         numberOfTries = 0;
         cards.forEach(card => card.addEventListener('click', flipACard))
 
-        if(shuffleCards) return;
+        if(shuffleLock) return;
         shuffleLock = true;
         setTimeout(() => {
             shuffleCards()
